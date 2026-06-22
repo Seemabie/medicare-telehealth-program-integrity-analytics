@@ -1,0 +1,11 @@
+{
+  "sample_excess_usd": 161742186.87282747,
+  "universe_providers": 46900,
+  "universe_benes_proxy": 2022543,
+  "national_telehealth_benes_2023": 6971495,
+  "national_partb_2023": 28623931,
+  "national_pct_telehealth_2023": 0.2499,
+  "coverage_multiplier": 3.446895813834366,
+  "projected_national_excess_usd": 557508466.8523648,
+  "methodology": "Sample excess across flagged set (top 5 percentile by combined risk score) multiplied by inverse coverage ratio. Coverage ratio derived from CMS TMEDTREND public file for 2023. No recovery rate multiplier applied. No enforcement effectiveness factor."
+}

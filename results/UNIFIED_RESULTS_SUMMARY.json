@@ -1,0 +1,394 @@
+{
+  "headline_metrics": {
+    "T001_active_telehealth_providers_2023": 46900,
+    "T002_total_telehealth_services_2023": 9118975,
+    "T003_total_telehealth_payments_2023_usd": 396167172.639985,
+    "T004_distinct_telehealth_hcpcs_codes_observed": 24,
+    "T005_flagged_providers_top_5pct": 2346,
+    "T006_sample_excess_billing_usd": 161742186.87282747,
+    "T007_bootstrap_ci_low": 145467900.02078858,
+    "T008_bootstrap_ci_high": 179224021.34595606,
+    "T009_coverage_multiplier": 3.446895813834366,
+    "T010_projected_national_excess_usd": 557508466.8523648
+  },
+  "universe_scope": {
+    "T011_total_provider_service_rows_5_years": 48891840,
+    "T019_telehealth_filtered_rows_2023": 73269,
+    "T020_unique_active_telehealth_providers_2023": 46900,
+    "T017_leie_total_excluded_entities": 81914,
+    "T018_tmedtrend_row_count": 30100
+  },
+  "geographic": {
+    "T021_top_state_by_flagged_count": "CA",
+    "T022_top_state_by_excess": "CA",
+    "T027_states_with_flagged_providers": 47,
+    "top_5_states": [
+      {
+        "State": "CA",
+        "Flagged_Providers": 439,
+        "Total_Excess": 35267744.272113584,
+        "Total_Payment": 42803857.63004118,
+        "Beneficiaries_Served": 83552,
+        "Excess_Millions": 35.26774427211358
+      },
+      {
+        "State": "NY",
+        "Flagged_Providers": 265,
+        "Total_Excess": 32171799.882017832,
+        "Total_Payment": 42020879.13999908,
+        "Beneficiaries_Served": 101094,
+        "Excess_Millions": 32.17179988201783
+      },
+      {
+        "State": "TX",
+        "Flagged_Providers": 300,
+        "Total_Excess": 15577873.464258565,
+        "Total_Payment": 18362948.110000417,
+        "Beneficiaries_Served": 33203,
+        "Excess_Millions": 15.577873464258564
+      },
+      {
+        "State": "FL",
+        "Flagged_Providers": 192,
+        "Total_Excess": 13341246.241679704,
+        "Total_Payment": 16704039.089988437,
+        "Beneficiaries_Served": 38423,
+        "Excess_Millions": 13.341246241679704
+      },
+      {
+        "State": "NJ",
+        "Flagged_Providers": 133,
+        "Total_Excess": 6938350.9342686245,
+        "Total_Payment": 8611028.950004978,
+        "Beneficiaries_Served": 19173,
+        "Excess_Millions": 6.938350934268625
+      }
+    ]
+  },
+  "top_outlier": {
+    "T028_max_risk_score": 97.30697324306294,
+    "T029_top1_provider_name": "Cardionet, Llc",
+    "T030_top1_excess": 3948662.197990792,
+    "T031_top1_services": 78313,
+    "top_10_flagged": [
+      {
+        "Rndrng_NPI": "1689263147",
+        "Last_Name": "Cardionet, Llc",
+        "First_Name": NaN,
+        "State": "NY",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 78313.0,
+        "Telehealth_Benes_Max": 11032,
+        "Telehealth_Payment_Total": 5042661.5099885855,
+        "Payment_Per_Bene": 457.09404550295375,
+        "Combined_Risk_Score": 46.37693851344478,
+        "Excess_Billing": 3948662.197990792
+      },
+      {
+        "Rndrng_NPI": "1023539053",
+        "Last_Name": "Rhythm Management Group Corp",
+        "First_Name": NaN,
+        "State": "NY",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 63182.0,
+        "Telehealth_Benes_Max": 10726,
+        "Telehealth_Payment_Total": 4136822.250001113,
+        "Payment_Per_Bene": 385.681731307208,
+        "Combined_Risk_Score": 44.84314446132844,
+        "Excess_Billing": 3073167.7340032584
+      },
+      {
+        "Rndrng_NPI": "1659828762",
+        "Last_Name": "Beyond Reps, Inc.",
+        "First_Name": NaN,
+        "State": "NY",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 49468.0,
+        "Telehealth_Benes_Max": 6392,
+        "Telehealth_Payment_Total": 3339184.65998608,
+        "Payment_Per_Bene": 522.4006038776721,
+        "Combined_Risk_Score": 47.03636851394462,
+        "Excess_Billing": 2705315.5879873587
+      },
+      {
+        "Rndrng_NPI": "1548632771",
+        "Last_Name": "Cardiac Rms Llc",
+        "First_Name": NaN,
+        "State": "NY",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 50105.0,
+        "Telehealth_Benes_Max": 6907,
+        "Telehealth_Payment_Total": 3288780.97000651,
+        "Payment_Per_Bene": 476.1518705670349,
+        "Combined_Risk_Score": 46.37603425261555,
+        "Excess_Billing": 2603841.4080078914
+      },
+      {
+        "Rndrng_NPI": "1285749705",
+        "Last_Name": "Bilkoo",
+        "First_Name": "Pareena",
+        "State": "FL",
+        "Provider_Type": "Cardiology",
+        "Telehealth_Services_Total": 80779.0,
+        "Telehealth_Benes_Max": 4802,
+        "Telehealth_Payment_Total": 2670049.989983032,
+        "Payment_Per_Bene": 556.0287359398234,
+        "Combined_Risk_Score": 51.5345488106933,
+        "Excess_Billing": 2221613.926516247
+      },
+      {
+        "Rndrng_NPI": "1124678263",
+        "Last_Name": "Vector Remote Care, Llc",
+        "First_Name": NaN,
+        "State": "NY",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 35883.0,
+        "Telehealth_Benes_Max": 4776,
+        "Telehealth_Payment_Total": 2371126.980016476,
+        "Payment_Per_Bene": 496.4671231190276,
+        "Combined_Risk_Score": 46.40173030603078,
+        "Excess_Billing": 1897510.1640174307
+      },
+      {
+        "Rndrng_NPI": "1518471648",
+        "Last_Name": "Evoke Medical Care Llc",
+        "First_Name": NaN,
+        "State": "CO",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 24342.0,
+        "Telehealth_Benes_Max": 2960,
+        "Telehealth_Payment_Total": 1651128.249993228,
+        "Payment_Per_Bene": 557.8135979706851,
+        "Combined_Risk_Score": 47.24887634907448,
+        "Excess_Billing": 1428405.4285635464
+      },
+      {
+        "Rndrng_NPI": "1295387686",
+        "Last_Name": "Octagos Health Inc.",
+        "First_Name": NaN,
+        "State": "TX",
+        "Provider_Type": "Independent Diagnostic Testing Facility (IDTF)",
+        "Telehealth_Services_Total": 25391.0,
+        "Telehealth_Benes_Max": 4335,
+        "Telehealth_Payment_Total": 1728385.599999949,
+        "Payment_Per_Bene": 398.7048673586965,
+        "Combined_Risk_Score": 44.60486803875913,
+        "Excess_Billing": 1360845.721424805
+      },
+      {
+        "Rndrng_NPI": "1376926063",
+        "Last_Name": "Ravilla",
+        "First_Name": "Avinash",
+        "State": "PA",
+        "Provider_Type": "General Practice",
+        "Telehealth_Services_Total": 32169.0,
+        "Telehealth_Benes_Max": 1458,
+        "Telehealth_Payment_Total": 1255438.88999878,
+        "Payment_Per_Bene": 861.0691975300275,
+        "Combined_Risk_Score": 55.73560278679361,
+        "Excess_Billing": 1152562.4099989885
+      },
+      {
+        "Rndrng_NPI": "1417118639",
+        "Last_Name": "Portier",
+        "First_Name": "David",
+        "State": "CA",
+        "Provider_Type": "Internal Medicine",
+        "Telehealth_Services_Total": 27707.0,
+        "Telehealth_Benes_Max": 1927,
+        "Telehealth_Payment_Total": 1163375.0999987,
+        "Payment_Per_Bene": 603.7234561487804,
+        "Combined_Risk_Score": 48.33642321379399,
+        "Excess_Billing": 981699.9015186792
+      }
+    ]
+  },
+  "tier_distribution": {
+    "Low": 37519,
+    "Medium": 7035,
+    "High": 1876,
+    "Critical": 423,
+    "Extreme": 47
+  },
+  "validation_suite": {
+    "T034_permutation_top_feature": "Audio_Only_Share",
+    "T035_permutation_top_pct": 17.46062059987144,
+    "permutation_full": [
+      {
+        "Feature": "Audio_Only_Share",
+        "Importance_Raw": 0.1826009758735528,
+        "Importance_Pct": 17.46062059987144
+      },
+      {
+        "Feature": "Services_Per_Bene",
+        "Importance_Raw": 0.1688621967865264,
+        "Importance_Pct": 16.146894821592287
+      },
+      {
+        "Feature": "Telehealth_Services_Total",
+        "Importance_Raw": 0.1574423103307749,
+        "Importance_Pct": 15.054905560617216
+      },
+      {
+        "Feature": "Telehealth_HCPCS_Diversity",
+        "Importance_Raw": 0.1374514073625382,
+        "Importance_Pct": 13.143340901625816
+      },
+      {
+        "Feature": "Payment_Per_Bene",
+        "Importance_Raw": 0.1049917809534097,
+        "Importance_Pct": 10.039495378172363
+      },
+      {
+        "Feature": "Avg_Payment_Per_Service",
+        "Importance_Raw": 0.1023267450095609,
+        "Importance_Pct": 9.784660039653753
+      },
+      {
+        "Feature": "Telehealth_Benes_Max",
+        "Importance_Raw": 0.0974230840269625,
+        "Importance_Pct": 9.315763509621876
+      },
+      {
+        "Feature": "Log_Services",
+        "Importance_Raw": 0.0946889321772417,
+        "Importance_Pct": 9.054319188845245
+      }
+    ],
+    "T036_temporal_holdout_coverage_pct": 79.8507462686567,
+    "T037_temporal_mean_lift": 3.348126335985124,
+    "T038_temporal_median_lift": 4.967185544220606,
+    "T039_leie_direct_match_count_flagged": 5,
+    "T040_leie_fuzzy_match_count_top100": 8,
+    "T041_doj_match_count": 0,
+    "T042_bootstrap_mean_flagged_count": 2345.481,
+    "T043_bootstrap_mean_excess": 161593000.42121053,
+    "critical_tier_overlap_with_training_pool_pct": 82.12765957446808
+  },
+  "fraud_typology": {
+    "T044_extreme_payment_per_bene": 488,
+    "T045_audio_only_heavy": 200,
+    "T046_single_hcpcs_dominant": 148,
+    "T047_rural_high_volume": 1,
+    "T048_pandemic_emergence": 1295,
+    "T049_multi_typology_count": 475
+  },
+  "threshold_sensitivity": [
+    {
+      "Percentile_Threshold": 90.0,
+      "Flagged_Count": 4690,
+      "Pct_of_Universe": 10.0,
+      "Sample_Excess": 199501216.99328417,
+      "Mean_Excess_Per_Flagged": 42537.57291967679
+    },
+    {
+      "Percentile_Threshold": 92.0,
+      "Flagged_Count": 3752,
+      "Pct_of_Universe": 8.0,
+      "Sample_Excess": 187996883.76691136,
+      "Mean_Excess_Per_Flagged": 50105.77925557339
+    },
+    {
+      "Percentile_Threshold": 94.0,
+      "Flagged_Count": 2814,
+      "Pct_of_Universe": 6.0,
+      "Sample_Excess": 172007275.8443492,
+      "Mean_Excess_Per_Flagged": 61125.54223324421
+    },
+    {
+      "Percentile_Threshold": 95.0,
+      "Flagged_Count": 2345,
+      "Pct_of_Universe": 5.0,
+      "Sample_Excess": 161700013.75864118,
+      "Mean_Excess_Per_Flagged": 68955.2297478214
+    },
+    {
+      "Percentile_Threshold": 96.0,
+      "Flagged_Count": 1876,
+      "Pct_of_Universe": 4.0,
+      "Sample_Excess": 149569340.82005954,
+      "Mean_Excess_Per_Flagged": 79727.79361410423
+    },
+    {
+      "Percentile_Threshold": 97.0,
+      "Flagged_Count": 1407,
+      "Pct_of_Universe": 3.0,
+      "Sample_Excess": 132379826.40788253,
+      "Mean_Excess_Per_Flagged": 94086.58593310768
+    },
+    {
+      "Percentile_Threshold": 98.0,
+      "Flagged_Count": 938,
+      "Pct_of_Universe": 2.0,
+      "Sample_Excess": 111146623.229069,
+      "Mean_Excess_Per_Flagged": 118493.20173674732
+    },
+    {
+      "Percentile_Threshold": 99.0,
+      "Flagged_Count": 469,
+      "Pct_of_Universe": 1.0,
+      "Sample_Excess": 71108489.4421516,
+      "Mean_Excess_Per_Flagged": 151617.24827750874
+    },
+    {
+      "Percentile_Threshold": 99.5,
+      "Flagged_Count": 235,
+      "Pct_of_Universe": 0.5010660980810234,
+      "Sample_Excess": 36652794.073125765,
+      "Mean_Excess_Per_Flagged": 155969.33648138624
+    },
+    {
+      "Percentile_Threshold": 99.9,
+      "Flagged_Count": 47,
+      "Pct_of_Universe": 0.1002132196162046,
+      "Sample_Excess": 11049855.554635843,
+      "Mean_Excess_Per_Flagged": 235103.3096731031
+    }
+  ],
+  "macro_telehealth_context": {
+    "T054_2020_national_pct_telehealth": 0.4791,
+    "T055_2023_national_pct_telehealth": 0.2499,
+    "T056_2020_total_telehealth_benes": 14826919,
+    "T057_2023_total_telehealth_benes": 6971495,
+    "T058_telehealth_decline_2020_to_2023_pct": -52.98082494414382,
+    "tmedtrend_yearly": [
+      {
+        "Year": 2020,
+        "Total_Bene_Telehealth": 14826919,
+        "Total_PartB_Enrl": 32244893.5,
+        "Pct_Telehealth": 0.4791
+      },
+      {
+        "Year": 2021,
+        "Total_Bene_Telehealth": 10249756,
+        "Total_PartB_Enrl": 30841829.917,
+        "Pct_Telehealth": 0.342
+      },
+      {
+        "Year": 2022,
+        "Total_Bene_Telehealth": 8503157,
+        "Total_PartB_Enrl": 29655517.25,
+        "Pct_Telehealth": 0.2944
+      },
+      {
+        "Year": 2023,
+        "Total_Bene_Telehealth": 6971495,
+        "Total_PartB_Enrl": 28623931.167,
+        "Pct_Telehealth": 0.2499
+      },
+      {
+        "Year": 2024,
+        "Total_Bene_Telehealth": 6732914,
+        "Total_PartB_Enrl": 27970330.083,
+        "Pct_Telehealth": 0.2463
+      }
+    ]
+  },
+  "reproducibility": {
+    "T059_random_seed": 42,
+    "T060_isolation_forest_contamination": 0.02,
+    "T061_isolation_forest_n_estimators": 100,
+    "T062_bootstrap_iterations": 1000,
+    "T063_fuzzy_similarity_threshold": 0.85
+  }
+}

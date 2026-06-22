@@ -1,0 +1,21 @@
+{
+  "peer_benchmark_sensitivity_M": {
+    "national_median": 164.04,
+    "state_median (chosen)": 161.74,
+    "specialty_median": 138.11,
+    "specialty_state_median": 127.98
+  },
+  "leie_enrichment": {
+    "universe_count": 14,
+    "universe_total": 46900,
+    "universe_rate_pct": 0.0299,
+    "flagged_count": 5,
+    "flagged_total": 2346,
+    "flagged_rate_pct": 0.2131,
+    "enrichment_factor": 7.14
+  },
+  "top_outlier_hcpcs_codes": [
+    "G2066"
+  ],
+  "top_outlier_hcpcs_description": "Interrogation device evaluation(s), (remote) up to 30 days; implantable cardiovascular monitor system, including external transmissions, ECG strips, with physician/qualified health care professional review and report"
+}

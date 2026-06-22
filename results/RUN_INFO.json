@@ -1,0 +1,91 @@
+{
+  "project": "Medicare Telehealth Fraud and Utilization Analytics",
+  "version": "REBUILD V3",
+  "rebuild_started": "2026-05-14",
+  "principal_investigator": "Seemab Hassan",
+  "methodology_framing": "Anomaly detection and risk stratification of Medicare telehealth billing patterns. NOT supervised fraud classification.",
+  "validation_strategy": "Six pillars: bootstrap CI, permutation importance, temporal holdout, OIG LEIE concordance (honest), DOJ cross reference (honest), fraud typology alignment, threshold sensitivity.",
+  "risk_score_interpretation": "Anomaly score (0 to 100) indicating statistical deviation from peer billing patterns. NOT a fraud probability. Investigative review by appropriate authorities required before any inference.",
+  "data_window": "2019 to 2023 Medicare Provider and Service files (HCPCS-level), analytical universe is 2023",
+  "analytical_universe_definition": "Providers billing any code from the 27 code telehealth HCPCS basket in 2023, with row-level filters Tot_Benes>=11 and Avg_Mdcr_Pymt_Amt>0",
+  "parameters": {
+    "random_seed": 42,
+    "isolation_forest_contamination": 0.02,
+    "isolation_forest_n_estimators": 100,
+    "isolation_forest_bootstrap": false,
+    "statistical_weights": {
+      "Payment_Per_Bene": 0.3,
+      "Services_Per_Bene": 0.25,
+      "Avg_Payment_Per_Service": 0.15,
+      "Audio_Only_Share": 0.1,
+      "Telehealth_HCPCS_Diversity": 0.1,
+      "Log_Services": 0.1
+    },
+    "combined_score_weights": {
+      "statistical": 0.6,
+      "ml": 0.4
+    },
+    "tier_cutpoints_percentile": {
+      "Low": "<80",
+      "Medium": "80-95",
+      "High": "95-99",
+      "Critical": "99-99.9",
+      "Extreme": "99.9+"
+    },
+    "flagged_set_definition": "percentile >= 95 (top 5 percent by Combined_Risk_Score)",
+    "bootstrap_iterations": 1000,
+    "permutation_repeats": 5,
+    "fuzzy_similarity_threshold": 0.85
+  },
+  "telehealth_hcpcs_basket": [
+    "99421",
+    "99422",
+    "99423",
+    "99441",
+    "99442",
+    "99443",
+    "99453",
+    "99454",
+    "99457",
+    "99458",
+    "99091",
+    "G2010",
+    "G2012",
+    "G2061",
+    "G2062",
+    "G2063",
+    "G2066",
+    "G2250",
+    "G2251",
+    "G2252",
+    "Q3014",
+    "98966",
+    "98967",
+    "98968",
+    "98970",
+    "98971",
+    "98972"
+  ],
+  "software_environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.15.3"
+  },
+  "source_file_hashes": {
+    "Provider_Service_2019.csv": "e9fb365fa80fb39a8e5752cf1ff3df856b4f339bfa4b00a8f9691d3ff7191df7",
+    "Provider_Service_2020.csv": "ad908d89d88e863bbe8a35252a8d7f6c31a115e94aafa704ea86177bb93e4f6d",
+    "Provider_Service_2021.csv": "489e85bf0514a0ac16ade397e62215c3fb04de5260d2f900a3339832ac6ebd35",
+    "Provider_Service_2022.csv": "00aa7ec349c71622687d2fad41e09b0da4cf29e45dd803157066bc55a414e8a2",
+    "Provider_Service_2023.csv": "f7f1b14f7941964c2c1e547f166c6bd6bb91274255fc6a8cfc2d8beec0ae6684",
+    "LEIE_Database.csv": "26e3ad5adfdff8a0ca067763df0c1a8fec3c2a3c0418613f607a93928a5bac08",
+    "TMEDTREND_PUBLIC_250522.csv": "d689f92282dfcc174d7389ebc6dc05e5777f6b2be6f7291f5f6fd4e203faa892",
+    "Taxonomy_Crosswalk_JAN_2025.csv": "87fa316b1b6fe04ad82b79b1fb30e3945b7694224465f1a93282c298ae2df246",
+    "Geographic_Variation_2014_2023.csv": "658dc3fec0b08f4bce911a8483a8378a3cf09965ac7bc82d8790d0b35b7138a2",
+    "NPPES_Deactivated_20250811.xlsx": "070d04cac17c79f9f4cef858d2d1694f9534072c4d3845ff266b58dd0254b6a1",
+    "PPEF_Enrollment_2023Q4.csv": "a5fe5f005d9005b2abf6eee152c4934c0fae9aaaf1cbeb759ad3766a7cd781dc"
+  },
+  "run_timestamp_utc": "2026-05-14T18:44:28.382221+00:00"
+}
