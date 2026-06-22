@@ -1,0 +1,64 @@
+ID,Claim,Value,Status,Source_File,Notebook_Section
+T-001,Active telehealth providers in 2023 analytical universe,"46,900",VERIFIED,results/scored_universe_2023.csv,Section 2
+T-002,Total telehealth services billed across analytical universe 2023,"9,118,975",VERIFIED,results/scored_universe_2023.csv,Section 2
+T-003,Total Medicare telehealth payments 2023,"$396,167,172.64",VERIFIED,results/scored_universe_2023.csv,Section 2
+T-004,Distinct telehealth HCPCS codes observed (of 27 in basket),24,VERIFIED,results/filtered/telehealth_2023.csv,Section 2
+T-005,Number of flagged providers (top 5 percent by combined risk),"2,346",VERIFIED,results/flagged_providers_2023.csv,Section 7
+T-006,Sample excess billing across flagged set,"$161,742,186.87",VERIFIED,results/flagged_providers_2023.csv (Excess_Billing column sum),Section 8
+T-007,Bootstrap 95 percent CI on sample excess (low),"$145,467,900",VERIFIED,results/bootstrap.csv,Section 10
+T-008,Bootstrap 95 percent CI on sample excess (high),"$179,224,021",VERIFIED,results/bootstrap.csv,Section 10
+T-009,Coverage multiplier for national projection,3.447,VERIFIED,results/projection_methodology.json,Section 9
+T-010,Projected national excess (coverage adjusted),"$557,508,466.85",VERIFIED,results/projection_methodology.json,Section 9
+T-011,Total Provider+Service rows across five years,"48,891,840",VERIFIED,REBUILD_LOG.md,Section 1
+T-012,2019 Provider+Service row count,"10,140,228",VERIFIED,REBUILD_LOG.md,Section 1
+T-013,2020 Provider+Service row count,"9,449,361",VERIFIED,REBUILD_LOG.md,Section 1
+T-014,2021 Provider+Service row count,"9,886,177",VERIFIED,REBUILD_LOG.md,Section 1
+T-015,2022 Provider+Service row count,"9,755,427",VERIFIED,REBUILD_LOG.md,Section 1
+T-016,2023 Provider+Service row count,"9,660,647",VERIFIED,REBUILD_LOG.md,Section 1
+T-017,LEIE total excluded entities,"81,914",VERIFIED,REBUILD_LOG.md,Section 1
+T-018,TMEDTREND row count,"30,100",VERIFIED,REBUILD_LOG.md,Section 1
+T-019,2023 telehealth HCPCS filtered rows,"73,269",VERIFIED,results/filtered/telehealth_2023.csv,Section 2
+T-020,2023 unique active telehealth providers (post filter),"46,900",VERIFIED,results/scored_universe_2023.csv,Section 2
+T-021,Top state by flagged provider count,CA,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-022,Top state by excess billing,CA,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-023,California flagged provider count,439,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-024,New York flagged provider count,265,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-025,Texas flagged provider count,300,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-026,Florida flagged provider count,192,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-027,Number of states with at least one flagged provider,47,VERIFIED,results/per_state_excess_2023.csv,Section 8
+T-028,Highest combined risk score,97.31,VERIFIED,results/scored_universe_2023.csv,Section 7
+T-029,Top 1 provider name,"Cardionet, Llc",VERIFIED,results/flagged_providers_2023.csv,Section 8
+T-030,Top 1 provider excess billing,"$3,948,662.20",VERIFIED,results/flagged_providers_2023.csv,Section 8
+T-031,Top 1 provider telehealth services,"78,313",VERIFIED,results/flagged_providers_2023.csv,Section 2
+T-032,Top 1 provider state median Payment_Per_Bene,$99.17,VERIFIED,results/state_baselines.csv,Section 4
+T-033,"Tier counts (Low, Medium, High, Critical, Extreme)","37519, 7035, 1876, 423, 47",VERIFIED,results/tier_distribution.csv,Section 7
+T-034,Permutation importance top feature,Audio_Only_Share,VERIFIED,results/permutation_importance.csv,Section 11
+T-035,Permutation importance top feature percent,17.5%,VERIFIED,results/permutation_importance.csv,Section 11
+T-036,Temporal holdout coverage percent,79.9%,VERIFIED,results/temporal_holdout.csv,Section 12
+T-037,Temporal mean lift ratio,3.35x,VERIFIED,results/temporal_holdout.csv,Section 12
+T-038,Temporal median lift ratio,4.97x,VERIFIED,results/temporal_holdout.csv,Section 12
+T-039,LEIE direct NPI match count in flagged set,5,VERIFIED,results/flagged_providers_2023.csv (LEIE_Direct_Match column),Section 13
+T-040,LEIE fuzzy name match count (top 100 flagged),8,VERIFIED,results/leie_concordance.csv,Section 13
+T-041,DOJ named defendant match count,0,VERIFIED,results/doj_cross_reference.csv (empty file = no matches),Section 14
+T-042,Bootstrap mean of flagged count,2345,VERIFIED,results/bootstrap.csv,Section 10
+T-043,Bootstrap mean of sample excess,"$161,593,000",VERIFIED,results/bootstrap.csv,Section 10
+T-044,Extreme payment per beneficiary typology match count,488,VERIFIED,results/fraud_typology.csv,Section 15
+T-045,Audio only heavy typology match count,200,VERIFIED,results/fraud_typology.csv,Section 15
+T-046,Single HCPCS dominance typology match count,148,VERIFIED,results/fraud_typology.csv,Section 15
+T-047,Rural high volume typology match count,1,VERIFIED,results/fraud_typology.csv,Section 15
+T-048,Pandemic emergence typology match count,1295,VERIFIED,results/fraud_typology.csv,Section 15
+T-049,Multi-typology providers count (2+ patterns),475,VERIFIED,results/fraud_typology.csv,Section 15
+T-050,Flagged count at 95th percentile cutoff,"2,345",VERIFIED,results/threshold_sensitivity.csv,Section 16
+T-051,Sample excess at 95th percentile cutoff,"$161,700,014",VERIFIED,results/threshold_sensitivity.csv,Section 16
+T-052,Flagged count at 99th percentile cutoff,469,VERIFIED,results/threshold_sensitivity.csv,Section 16
+T-053,Sample excess at 99th percentile cutoff,"$71,108,489",VERIFIED,results/threshold_sensitivity.csv,Section 16
+T-054,2020 national Pct_Telehealth,0.4791 (47.91%),VERIFIED,results/tmedtrend_national.csv,Section 9
+T-055,2023 national Pct_Telehealth,0.2499 (24.99%),VERIFIED,results/tmedtrend_national.csv,Section 9
+T-056,Total Medicare beneficiaries using telehealth 2020,"14,826,919",VERIFIED,results/tmedtrend_national.csv,Section 9
+T-057,Total Medicare beneficiaries using telehealth 2023,"6,971,495",VERIFIED,results/tmedtrend_national.csv,Section 9
+T-058,Telehealth decline 2020 to 2023 (%),-53.0%,VERIFIED,results/tmedtrend_national.csv,Section 9
+T-059,Random seed used,42,VERIFIED,results/RUN_INFO.json,Section 17
+T-060,Isolation Forest contamination,0.02,VERIFIED,results/RUN_INFO.json,Section 17
+T-061,Isolation Forest n_estimators,100,VERIFIED,results/RUN_INFO.json,Section 17
+T-062,Bootstrap iterations,1000,VERIFIED,results/RUN_INFO.json,Section 17
+T-063,Fuzzy similarity threshold,0.85,VERIFIED,results/RUN_INFO.json,Section 17
